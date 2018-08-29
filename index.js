@@ -4,6 +4,13 @@ function takeANumber(numOfPeople, personName){
   return sentence;
 }
 
+function takeANumber(numOfPeople){
+  var counter = 1;
+  numOfPeople.push(counter);
+  counter += 1;
+  return "You are number " + numOfPeople.length;
+}
+
 function nowServing(katzDeliLine){
   if(!katzDeliLine.length){
     return "There is nobody waiting to be served!";
